@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About & Our Team - QX Design</title>
+<!-- Bootstrap 5 CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- FontAwesome 6 for Nav Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+/* Header & Navigation Styles */
+.header {
+background-color: #ffffff;
+box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+padding: 15px 0;
+}
+.nav-link-custom {
+color: #333333;
+text-decoration: none;
+margin-left: 20px;
+font-size: 0.95rem;
+font-weight: 500;
+transition: color 0.2s ease;
+}
+.nav-link-custom:hover {
+color: #666666;
+}
+.menu-bar-btn {
+background: none;
+border: none;
+font-size: 1.5rem;
+color: #333333;
+cursor: pointer;
+}
+
+/* Layout Sections */
+.section-padding {
+padding: 80px 0;
+}
+.about-founder {
+background-color: #eeeeee;
+border-radius: 8px;
+overflow: hidden;
+}
+.about-founder img {
+width: 100%;
+height: auto;
+object-fit: cover;
+}
+.about-founder h2 {
+font-size: 2.5rem;
+margin-bottom: 0.5rem;
+}
+.about-founder .tagline {
+font-size: 1.1rem;
+color: #555;
+margin-bottom: 1.5rem;
+}
+.about-founder p {
+font-size: 1.05rem;
+line-height: 1.6;
+color: #222;
+}
+.home-banner-inner {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            background-color: #222;
+            overflow: hidden;
+        }
+        .banner-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .banner-background img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+        }
+        .background-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #fff;
+        }
+        .background-content h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+/* Team Grid Styles */
+.team-section .card {
+border: none;
+margin-bottom: 30px;
+text-align: center;
+background: transparent;
+}
+.team-section .image-area img {
+width: 100%;
+height: auto;
+object-fit: cover;
+border-radius: 4px;
+}
+.team-section .contact-person {
+padding: 15px 0;
+}
+.team-section .contact-person p {
+margin-bottom: 5px;
+}
+.team-section .contact-person a {
+color: #555;
+text-decoration: none;
+}
+.team-section .contact-person a:hover {
+text-decoration: underline;
+}
+
+
+/* Footer / Contact Styling */
+.contact-section {
+background-color: #1a1a1a;
+color: #fff;
+}
+.contact-content-wrapper {
+padding: 60px;
+}
+.contact-section a {
+color: #fff;
+text-decoration: none;
+}
+.contact-section ul {
+list-style: none;
+padding: 0;
+}
+.footer-links-grid {
+display: flex;
+gap: 30px;
+margin-top: 40px;
+}
+.footer-col h6 {
+text-transform: uppercase;
+font-size: 0.9rem;
+letter-spacing: 1px;
+margin-bottom: 15px;
+color: #bbb;
+}
+.footer-col ul li {
+margin-bottom: 8px;
+font-size: 0.9rem;
+}
+.footer-col ul li a {
+color: #888;
+}
+.footer-col ul li a:hover {
+color: #fff;
+}
+.contact-img-box img {
+width: 100%;
+height: 100%;
+min-height: 500px;
+object-fit: cover;
+background-color: #2a2a2a;
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation Header -->
+<header class="header sticky-top">
+<div class="container">
+<div class="row justify-content-between align-items-center">
+<div class="logo col-auto">
+<a href="index.html">
+<img src="img/general/cropped-IMG_2738-1-192x192.jpeg" alt="QX DESIGN" style="max-height: 40px;">
+</a>
+</div>
+
+<div class="col-auto d-none d-md-flex">
+<a class="nav-link-custom" href="index.html">Home</a>
+<a class="nav-link-custom" href="Architectural projects.html">Architectural Projects</a>
+<a class="nav-link-custom" href="https://kirtijalan.in/" target="_blank">Interior Projects and Products</a>
+<a class="nav-link-custom" href="Accolades.html">Accolades</a>
+<a class="nav-link-custom" href="AboutUs.html">About Us</a>
+<a class="nav-link-custom" href="contactUs.html">Contact Us</a>
+</div>
+
+<div class="col-auto d-md-none">
+<button class="menu-bar-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#main_nav_menu">
+<i class="fa-solid fa-bars"></i>
+</button>
+</div>
+
+<!-- Mobile Offcanvas Menu -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="main_nav_menu">
+<div class="offcanvas-header">
+<div class="menu-logo">
+<img src="img/general/cropped-IMG_2738-1-192x192.jpeg" alt="QX DESIGN" style="max-height: 35px;">
+</div>
+<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+<ul class="nav flex-column">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="Architectural projects.html">Architectural Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="https://kirtijalan.in/" target="_blank">Interior Projects and Products</a></li>
+<li class="nav-item"><a class="nav-link" href="Accolades.html">Accolades</a></li>
+<li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
+<li class="nav-item"><a class="nav-link" href="contactUs.html">Contact Us</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+</header>
+<section class="home-banner-inner">
+    <div class="banner-background">
+        <img src="img/homepage/home2.jpg" alt="Accolades Banner Background Image">
+    </div>
+    <div class="background-content">
+        <h1>About Us</h1>
+    </div>
+</section>
+<!-- Hero Section: Studio Intro & Udit Mittal Profile -->
+<section class="mt-5">
+<div class="container-fluid p-3">
+<div class="about-founder p-4 p-lg-5">
+<div class="row align-items-center">
+<!-- Udit Mittal's Image Column -->
+<div class="col-12 col-lg-6 mb-4 mb-lg-0">
+<img src="img/aboutUs/udit.jpg" alt="Udit Mittal" class="img-fluid rounded">
+</div>
+<!-- Content Column -->
+<div class="col-12 col-lg-6">
+<h2><strong>QX Design</strong></h2>
+<p class="tagline"><strong>Q</strong>uestions? and e<strong>X</strong>periences!</p>
+<p><strong>Udit Mittal</strong> is the principal architect and co-founder of QX Design Studio and Kirti Jalan Design Studio. An alumnus of SPA Delhi, Udit is passionate about exploring material-sensitive construction methods, focusing on sustainable and socially-engaged design solutions. His work often involves innovative use of bamboo, ferrocement, mud-lime, and debris walls, with a strong emphasis on community participation, particularly in rural contexts. Apart from architecture, Udit is interested in theatre, painting, and playing guitar.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Grid Section: Our Team -->
+<section class="team-section section-padding pb-0">
+<div class="container-fluid">
+<div class="heading-area text-center mb-5">
+<h2>Our Team</h2>
+</div>
+
+<div class="row">
+<!-- Team Member: Kirti Jalan -->
+<div class="col-md-3">
+<div class="card">
+<div class="image-area">
+<img src="img/aboutUs/kirti.jpg" alt="Kirti Jalan"/>
+</div>
+<div class="contact-person">
+<p><strong>Kirti Jalan</strong></p>
+<p>Co-Founder</p>
+<p><a href="mailto:kirti@kirtijalan.in">kirti@kirtijalan.in</a></p>
+</div>
+</div>
+</div>
+
+<!-- Team Member: Nina Pestel -->
+<div class="col-md-3">
+<div class="card">
+<div class="image-area">
+<img src="img/aboutUs/nina.png" alt="Nina Pestel"/>
+</div>
+<div class="contact-person">
+<p><strong>Nina Pestel</strong></p>
+<p>Associate</p>
+<p><a href="mailto:ninapestel@qxdesign.in">ninapestel@qxdesign.in</a></p>
+</div>
+</div>
+</div>
+
+<!-- Team Member: Rahul Singh -->
+<div class="col-md-3">
+<div class="card">
+<div class="image-area">
+<img src="img/aboutUs/rahul.png" alt="Rahul Singh"/>
+</div>
+<div class="contact-person">
+<p><strong>Rahul Singh</strong></p>
+<p>Field Expert</p>
+<p><a href="mailto:rahulsingh@qxdesign.in">@karigartales</a></p>
+</div>
+</div>
+</div>
+
+<!-- Team Member: Aditya Banik -->
+<div class="col-md-3">
+<div class="card">
+<div class="image-area">
+<img src="img/aboutUs/aditya.png" alt="Aditya Banik"/>
+</div>
+<div class="contact-person">
+<p><strong>Aditya Banik</strong></p>
+<p>Architect</p>
+<p><a href="mailto:adityabanik@qxdesign.in">adityabanik@qxdesign.in</a></p>
+</div>
+</div>
+</div>
+
+<!-- Team Member: Nandini Jalan -->
+<div class="col-md-3">
+<div class="card">
+<div class="image-area">
+<img src="img/aboutUs/nandini.jpg" alt="Nandini Jalan"/>
+</div>
+<div class="contact-person">
+<p><strong>Nandini Jalan</strong></p>
+<p>Architect</p>
+<p><a href="mailto:nandini@kirtijalan.in">nandini@kirtijalan.in</a></p>
+</div>
+</div>
+</div>
+
+<!-- Team Member: Babitosh Paik -->
+<div class="col-md-3">
+<div class="card">
+<div class="image-area">
+<img src="img/aboutUs/babitosh.jpeg" alt="Babitosh Paik"/>
+</div>
+<div class="contact-person">
+<p><strong>Babitosh Paik</strong></p>
+<p>Studio Manager</p>
+<p><a href="mailto:babitoshpaik@qxdesign.in">@babitoshpaik</a></p>
+</div>
+</div>
+</div>
+
+<!-- Team Member: Samridhi Chauhan -->
+<div class="col-md-3">
+<div class="card">
+<div class="image-area">
+<img src="img/aboutUs/samridhi.jpeg" alt="Samridhi Chauhan"/>
+</div>
+<div class="contact-person">
+<p><strong>Samridhi Chauhan</strong></p>
+<p>Intern</p>
+</div>
+</div>
+</div>
+
+<!-- Team Member: Gangasri M -->
+<div class="col-md-3">
+<div class="card">
+<div class="image-area">
+<img src="img/aboutUs/gangasri.jpeg" alt="Gangasri M"/>
+</div>
+<div class="contact-person">
+<p><strong>Gangasri M</strong></p>
+<p>Intern</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+    <div class="container-fluid my-5 p-3">
+        <div class="about-founder__inner-wrap bg--secondary fade-up" style="background-color: #080808;">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <!-- Dynamic Image from ACF -->
+                    <img src="img/aboutUs/artisans.png" class="about-founder__col-img img-fluid">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="about-founder__content-wrap content-box text-white has-h2--white p-4">
+                        <h2>Our Artisans</h2>
+<p>We maintain a deep and collaborative relationship with our artisans, celebrating their craftsmanship as the cornerstone of our designs. Together, we blend traditional techniques with contemporary ideas to create spaces that honor cultural heritage. We work hand-in-hand, respecting their traditional knowledge and integrating it seamlessly into our designs. By engaging local craftsmen, we ensure authenticity and cultural resonance in every project. Together, we celebrate the synergy of design and craftsmanship, creating spaces that reflect heritage and ingenuity. This partnership ensures every creation is both meaningful and unique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section">
+<div class="container-fluid p-0">
+<div class="row g-0">
+<div class="col-md-6">
+<div class="contact-content-wrapper">
+<h5 class="text-light mb-3">Let's build a greener future together.</h5>
+<h2 class="text-light mb-3">Connect with us today.</h2>
+<p class="text-muted mb-4">We're here to bring your sustainable architectural dreams to life. Whether you're interested in collaborating on a project, learning more about our bamboo innovations, or simply have a question, we'd love to hear from you.</p>
+
+<div class="meta-info mb-4">
+<p class="mb-1"><i class="fa-solid fa-envelope me-2"></i> <a href="mailto:uditmittal@qxdesign.in">uditmittal@qxdesign.in</a></p>
+<p class="mb-1"><i class="fa-solid fa-phone me-2"></i> <a href="tel:+919078800532">+91 90788 00532</a></p>
+<p class="mb-1"><i class="fa-solid fa-location-dot me-2"></i> <a href="https://maps-fake-link.com" target="_blank">942, Block A, Lake Town, Kolkata 700089</a></p>
+</div>
+
+<div class="footer-links-grid">
+<div class="footer-col">
+<h6>Company</h6>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="accolades.html">Accolades</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h6>Spaces</h6>
+<ul>
+<li><a href="architecture-projects.html">Architectural Projects</a></li>
+<li><a href="blog/design-milestone-post.html">Design Milestone ’24</a></li>
+<li><a href="blog/raw-collaborative-post.html">Raw Collaborative ’24</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h6>Quick Link</h6>
+<ul>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="contact-img-box">
+<img src="img/homepage/home7.jpg" alt="Sustainable Bamboo Structure Footer Background Detail Image">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bootstrap 5 Bundle JS (Handles offcanvas toggling securely) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

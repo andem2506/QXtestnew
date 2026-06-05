@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architectural Projects – QX Design</title>
+    <meta name="description" content="Explore QX Design's architectural portfolio showcasing innovative design and build architecture solutions blending bamboo seamlessly into mainstream hospitality and institutional spaces.">
+    <meta name="keywords" content="bamboo architecture, architectural projects, QX Design, Udit Mittal, sustainable design, eco friendly architecture, hospitality design">
+    
+    <!-- Bootstrap & FontAwesome CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <style>
+        @font-face {
+            font-family: 'Gill Sans';
+            src: local('Gill Sans'), local('GillSans'), url('#') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            font-family: 'Gill Sans', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            color: #333333;
+        }
+        .home-banner-inner {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            background-color: #222;
+            overflow: hidden;
+        }
+        .banner-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .banner-background img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+        }
+        .background-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #fff;
+        }
+        .background-content h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        /* Header Style */
+        .header {
+            background-color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .logo img {
+            max-height: 40px;
+        }
+        .nav-link-custom {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+        .nav-link-custom:hover, .nav-link-custom.active {
+            color: #666;
+        }
+        .menu-bar-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Portfolio Grid Header Styling */
+        .portfolio-header {
+            padding: 20px 0 40px 0;
+            text-align: center;
+        }
+        .portfolio-header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        .portfolio-header p {
+            color: #777;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        /* Project Cards Layout */
+        .projects-grid {
+            padding-bottom: 80px;
+        }
+        .project-card {
+            margin-bottom: 40px;
+            transition: transform 0.3s ease;
+        }
+        .project-img-wrapper {
+            overflow: hidden;
+            background-color: #f5f5f5;
+            position: relative;
+            margin-bottom: 15px;
+        }
+        .project-img-wrapper img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .project-card:hover .project-img-wrapper img {
+            transform: scale(1.03);
+        }
+        .project-info h4 {
+            font-size: 1.25rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .project-info h4 a {
+            color: #222;
+            text-decoration: none;
+        }
+        .project-info h4 a:hover {
+            color: #666;
+        }
+        .project-meta {
+            font-size: 0.9rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Footer & Contact Layout */
+        .contact-section {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        .contact-content-wrapper {
+            padding: 60px;
+        }
+        .contact-section a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer-links-grid {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .footer-col h6 {
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            color: #bbb;
+        }
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-col ul li {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+        .footer-col ul li a {
+            color: #888;
+            transition: color 0.2s ease;
+        }
+        .footer-col ul li a:hover {
+            color: #fff;
+        }
+        .contact-img-box img {
+            width: 100%;
+            height: 100%;
+            min-height: 500px;
+            object-fit: cover;
+            background-color: #2a2a2a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        
+        <!-- HEADER / NAVIGATION -->
+        <header class="header sticky-top">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="logo col-auto">
+                        <a href="index.html">
+                            <img src="img/general/cropped-IMG_2738-1-192x192.jpeg" alt="QX DESIGN" style="max-height: 40px;">
+                        </a>
+                    </div>
+
+                    <div class="col-auto d-none d-md-flex">
+                        <a class="nav-link-custom" href="index.html">Home</a>
+                        <a class="nav-link-custom" href="Architectural projects.html">Architectural Projects</a>
+                        <a class="nav-link-custom" href="https://kirtijalan.in/" target="_blank">Interior Projects and Products</a>
+                        <a class="nav-link-custom" href="Accolades.html">Accolades</a>
+                        <a class="nav-link-custom" href="AboutUs.html">About Us</a>
+                        <a class="nav-link-custom" href="contactUs.html">Contact Us</a>
+                    </div>
+
+                    <div class="col-auto d-md-none">
+                        <button class="menu-bar-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#main_nav_menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="main_nav_menu">
+                        <div class="offcanvas-header">
+                            <div class="menu-logo">
+                                <img src="img/general/cropped-IMG_2738-1-192x192.jpeg" alt="QX DESIGN" style="max-height: 35px;">
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Architectural projects.html">Architectural Projects</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://kirtijalan.in/" target="_blank">Interior Projects and Products</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Accolades.html">Accolades</a></li>
+                                <li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <section class="home-banner-inner">
+            <div class="banner-background">
+                <img src="img/homepage/home4.jpg" alt="Accolades Banner Background Image">
+            </div>
+            <div class="background-content">
+                <h1>Architectural Projects</h1>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO INTRODUCTION -->
+        <section class="portfolio-header">
+            <div class="container">
+                <p>Blending sustainable structural bamboo seamlessly into alternative mainstream design solutions for hospitality, institutions, and public landscapes.</p>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO GRID -->
+        <section class="projects-grid">
+            <div class="container">
+                <div class="row">
+                    
+                  
+                    <!-- Project Card 2: Mukti Guest House -->
+                    <div class="col-md-6 col-lg-4 project-card">
+                        <div class="project-img-wrapper">
+                            <img src="img/ArchProjects/ArchProjects1.jpg" alt="Mukti Guest House, Sunderbans">
+                        </div>
+                        <div class="project-info">
+                            <h4><a href="Mukti.html">Mukti Guest House</a></h4>
+                            <div class="project-meta">Sunderbans, West Bengal</div>
+                        </div>
+                    </div>
+
+                      <!-- Project Card 1: Makaibari Tea Pavilion -->
+                      <div class="col-md-6 col-lg-4 project-card">
+                        <div class="project-img-wrapper">
+                            <img src="img/ArchProjects/ArchProjects2.jpg" alt="Makaibari Tea Pavilion, Kurseong">
+                        </div>
+                        <div class="project-info">
+                            <h4><a href="Makaibari.html">Makaibari Tea Pavilion</a></h4>
+                            <div class="project-meta">Kurseong, West Bengal</div>
+                        </div>
+                    </div>
+
+
+                    <!-- Project Card 3: Makaibari Tea Factory -->
+                    <div class="col-md-6 col-lg-4 project-card">
+                        <div class="project-img-wrapper">
+                            <img src="img/ArchProjects/ArchProjects3.jpg" alt="The Last Bead Structural Design Proposal Diagram">
+                        </div>
+                        <div class="project-info">
+                            <h4><a href="teafactory.html">Makaibari Tea Factory</a></h4>
+                            <div class="project-meta">Kurseong</div>
+                        </div>
+                    </div>
+ <!-- Project Card 3: Coir craft -->
+ <div class="col-md-6 col-lg-4 project-card">
+    <div class="project-img-wrapper">
+        <img src="img/ArchProjects/ArchProjects4.jpg" alt="The Last Bead Structural Design Proposal Diagram">
+    </div>
+    <div class="project-info">
+        <h4><a href="teafactory.html">Coir Craft Centre</a></h4>
+        <div class="project-meta">Craft Workshop</div>
+    </div>
+</div>
+
+<!-- Project Card 3: Coir craft -->
+<div class="col-md-6 col-lg-4 project-card">
+    <div class="project-img-wrapper">
+        <img src="img/ArchProjects/ArchProjects5.jpeg" alt="The Last Bead Structural Design Proposal Diagram">
+    </div>
+    <div class="project-info">
+        <h4><a href="#">Bocca cafe</a></h4>
+        <div class="project-meta">Bamboo Cafe, Odisha</div>
+    </div>
+</div>
+
+<!-- Project Card 3: Coir craft -->
+<div class="col-md-6 col-lg-4 project-card">
+    <div class="project-img-wrapper">
+        <img src="img/ArchProjects/ArchProjects6.jpg" alt="The Last Bead Structural Design Proposal Diagram">
+    </div>
+    <div class="project-info">
+        <h4><a href="#">Mopa, Odisha</a></h4>
+        <div class="project-meta">Ferrocement Terrace</div>
+    </div>
+</div>
+
+<!-- Project Card 3: Coir craft -->
+<div class="col-md-6 col-lg-4 project-card">
+    <div class="project-img-wrapper">
+        <img src="img/ArchProjects/ArchProjects7.png" alt="The Last Bead Structural Design Proposal Diagram">
+    </div>
+    <div class="project-info">
+        <h4><a href="#">Asaca, Goa</a></h4>
+        <div class="project-meta">In collaboration with B L Manjunath</div>
+    </div>
+</div>
+
+<!-- Project Card 3: Coir craft -->
+<div class="col-md-6 col-lg-4 project-card">
+    <div class="project-img-wrapper">
+        <img src="img/ArchProjects/ArchProjects8.jpeg" alt="The Last Bead Structural Design Proposal Diagram">
+    </div>
+    <div class="project-info">
+        <h4><a href="#">Samaa, Hyderabad</a></h4>
+        <div class="project-meta">In collaboration with Daniel Stamatis</div>
+    </div>
+</div>
+
+<!-- Project Card 3: Coir craft -->
+<div class="col-md-6 col-lg-4 project-card">
+    <div class="project-img-wrapper">
+        <img src="img/ArchProjects/ArchProjects9.png" alt="The Last Bead Structural Design Proposal Diagram">
+    </div>
+    <div class="project-info">
+        <h4><a href="#">LA-MA-LU</a></h4>
+        <div class="project-meta">In collaboration with Anand Shah, Summum Engineering, Rotterdam</div>
+    </div>
+</div>
+
+<!-- Project Card 3: Coir craft -->
+<div class="col-md-6 col-lg-4 project-card">
+    <div class="project-img-wrapper">
+        <img src="img/ArchProjects/ArchProjects10.png" alt="The Last Bead Structural Design Proposal Diagram">
+    </div>
+    <div class="project-info">
+        <h4><a href="#">WIP alt. fest, Bangalore</a></h4>
+        <div class="project-meta">Bamboo Installations</div>
+    </div>
+</div>
+
+<!-- Project Card 3: Coir craft -->
+<div class="col-md-6 col-lg-4 project-card">
+    <div class="project-img-wrapper">
+        <img src="img/ArchProjects/ArchProjects11.png" alt="The Last Bead Structural Design Proposal Diagram">
+    </div>
+    <div class="project-info">
+        <h4><a href="#">ZIRO 2023, Arunachal Pradesh</a></h4>
+        <div class="project-meta">ZIRO Music Festival</div>
+    </div>
+</div>
+<!-- Project Card 3: Coir craft -->
+<div class="col-md-6 col-lg-4 project-card">
+    <div class="project-img-wrapper">
+        <img src="img/ArchProjects/ArchProjects12.png" alt="The Last Bead Structural Design Proposal Diagram">
+    </div>
+    <div class="project-info">
+        <h4><a href="#">ZIRO 2022, Arunachal Pradesh</a></h4>
+        <div class="project-meta">ZIRO Music Festival</div>
+    </div>
+</div>
+<!-- Project Card 3: Coir craft -->
+<div class="col-md-6 col-lg-4 project-card">
+    <div class="project-img-wrapper">
+        <img src="img/ArchProjects/ArchProjects13.jpg" alt="The Last Bead Structural Design Proposal Diagram">
+    </div>
+    <div class="project-info">
+        <h4><a href="#">Help Us Help Them, Kolkata</a></h4>
+        <div class="project-meta">Bamboo Pavillion</div>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT / FOOTER SECTION -->
+        <section class="contact-section">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <div class="contact-content-wrapper">
+                            <h5 class="text-light mb-3">Let's build a greener future together.</h5>
+                            <h2 class="text-light mb-3">Connect with us today.</h2>
+                            <p class="text-muted mb-4">We're here to bring your sustainable architectural visions to life. Reach out to collaborate on high-end alternative engineering, hospitality structures, or modern ecological design.</p>
+                            
+                            <!-- Direct Communication Links -->
+                            <div class="meta-info mb-4">
+                                <p class="mb-1"><i class="fa-solid fa-envelope me-2"></i> <a href="mailto:uditmittal@qxdesign.in">uditmittal@qxdesign.in</a></p>
+                                <p class="mb-1"><i class="fa-solid fa-phone me-2"></i> <a href="tel:+919078800532">+91 90788 00532</a></p>
+                                <p class="mb-1"><i class="fa-solid fa-location-dot me-2"></i> <a href="#" target="_blank">942, Block A, Lake Town, Kolkata 700089</a></p>
+                            </div>
+
+                            <!-- Footer Directory -->
+                            <div class="footer-links-grid">
+                                <div class="footer-col">
+                                    <h6>Company</h6>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="accolades.html">Accolades</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-col">
+                                    <h6>Spaces</h6>
+                                    <ul>
+                                        <li><a href="architecture-projects.html">Architectural Projects</a></li>
+                                        <li><a href="interior-products.html">Interior & Products</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-col">
+                                    <h6>Quick Links</h6>
+                                    <ul>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="contact-img-box">
+                            <img src="img/homepage/home7.jpg" alt="Sustainable Architectural Craftsmanship Construction Detail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Bootstrap Execution Bundle Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
